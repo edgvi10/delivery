@@ -1,0 +1,25 @@
+{
+  "name": "edgvi10-delivery",
+  "displayName": "Delivery",
+  "description": "Aplicativo Delivery Simples :D",
+  "version": "0.0.1",
+  "author": "Eduardo Vieira",
+  "scripts": {
+    "dev": "clear && next dev --port=3300",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "localforage": "^1.10.0",
+    "md5": "^2.3.0",
+    "next": "^12.0.7",
+    "next-pwa": "^5.4.4",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.47.0",
+    "serverless-mysql": "^1.5.4",
+    "uuid": "^8.3.2"
+  }
+}

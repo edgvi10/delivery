@@ -1,0 +1,30 @@
+export const getStaticMap = (lat, lng, size, theme = "light") => {
+    const styles = [];
+    styles.push("format=png");
+    styles.push("maptype=roadmap");
+    styles.push("style=element:geometry%7Ccolor:0xf5f5f5");
+    styles.push("style=element:labels.icon%7Cvisibility:off");
+    styles.push("style=element:labels.text.fill%7Ccolor:0x616161");
+    styles.push("style=element:labels.text.stroke%7Ccolor:0xf5f5f5");
+    styles.push("style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off");
+    styles.push("style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd");
+    styles.push("style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee");
+    styles.push("style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575");
+    styles.push("style=feature:poi.business%7Cvisibility:off");
+    styles.push("style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5");
+    styles.push("style=feature:poi.park%7Celement:labels.text%7Cvisibility:off");
+    styles.push("style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e");
+    styles.push("style=feature:road%7Celement:geometry%7Ccolor:0xffffff");
+    styles.push("style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575");
+    styles.push("style=feature:road.highway%7Celement:geometry%7Ccolor:0xdadada");
+    styles.push("style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161");
+    styles.push("style=feature:road.local%7Celement:labels%7Cvisibility:off");
+    styles.push("style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e");
+    styles.push("style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5");
+    styles.push("style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee");
+    styles.push("style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9");
+    styles.push("style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e");
+
+    const url = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=14&size=${size}&maptype=roadmap&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&${styles.join("&")}`;
+    return url;
+};

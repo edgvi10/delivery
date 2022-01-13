@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: none;
+}
+
+#__next {
+    height: 100vh;
+    overflow: auto;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    cursor: default;
+    user-select: none;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.container, .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.modal.show {
+    display: block;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+*:last-child {
+    margin-bottom: 0;
+}
+
+.text-muted {
+    color: inherit !important;
+    opacity: .5;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+small,
+.small {
+    font-size: 75%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logotipo {
+    max-width: 6rem;
+}
+
+i.fad,
+i.fab {
+    font-style: normal !important;
+}
+
+.lh-100 {
+    line-height: 100%;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: .875rem;
+}
+
+p {
+    font-size: .875rem;
+    margin: 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.fa-spin {
+    animation-duration: 500ms;
+}
